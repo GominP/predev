@@ -1,14 +1,181 @@
-
 <html>
-  <title>Predev</title>
+  
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <title>Predev</title>
+      
+      <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,500" rel="stylesheet">
+      <link rel="stylesheet" href="css/style.css" type="text/css">
+      <link rel="stylesheet" href="css/queries.css" type="text/css">
+    
+      </head>
   <body>
-    Gomin Pawantao
+    <div>
+        <nav class="nav-bar">
+            <div class="header-name">
+            Gomin Pawantao
+        </div>
+        </nav>
+      
+        <div align ="center"><img src="tee.jpg" class="picture-me" alt="profile"/></div>
+        <div class="head-section"><h1>Infomation</h1></div>
+        <hr class="line-end-content"></hr>
+        <div class="div-font-contents content-aboutme" >
+        <p><span class="bold-text">Name : </span>Gomin Pawantao</p>
+        <p><span class="bold-text">age : </span>19</p>
+        <p><span class="bold-text">Brithday : </span>22 December 1999</p>
+        <p><span class="bold-text">Education : </span>Kasetsart University</p>
+        <p><span class="bold-text">Email : </span>Gomin.p@ku.th</p>
+        <p><span class="bold-text">Tel : </span>095-8654531</p>
+</div>
+<hr class="line-end-content"></hr>
+    <div class="head-section"><h1>Skills</h1></div>
+    <div class="grid-container-skills">
+<div class="grid-1-skill">
+<h3 class="topic-content">Programming</h3>
+</div>
+
+<div class="grid-2-skill">
+<h3 class="topic-content">Language</h3>
+
+</div>
+</div>
+</div>
+
   </body>
   <style>
-	  body{
-		  background-color:green;
-		  color:#fff;
-		  text-align:center;
-	  }
-</style>
+@charset "UTF-8";
+html {
+	font-family: 'Lato' , sans-serif;
+	font-size: 1em;
+	background-color: #fff;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.container-section {
+	width: 100%;
+}
+
+.div-font-contents {
+	letter-spacing: 1.2px;
+	word-spacing: 1px;
+	line-height: 1.3em;
+	font-weight: 300;
+}
+
+.line-under {
+	width: 300px;
+	margin-top: -20px;
+	border: solid 0.1em #019788;	
+}
+
+.head-section {
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 1em;
+	font-size: 1.5em;
+}
+
+.bg-section-odd {
+	background-color: #f0f0f0;
+}
+
+.bg-section-even {
+	background-color: #fff;
+}
+
+.bold-text {
+	font-weight: 400;
+}
+
+/* ------------------------------------------------------------- */
+/* Setting Navbar */
+/* ------------------------------------------------------------- */
+
+.nav-bar {
+	background-color: rgba(224, 160, 75, 0.9);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1001;
+
+}
+
+.header-name {
+	text-align: center;
+	padding-top: 0.05em;
+	padding-bottom: 0.01em;
+	font-size: 3.5em;
+	font-weight: 300;
+	color: #000;
+	display: block;
+	margin: 0 auto;
+}
+
+.container-section-aboutme {
+	width: 50%;
+	display: block;
+	background-color: rgb(255, 255, 255);
+	margin: 1em auto 0;
+	padding: 1em;
+	color: #000;
+	font-weight: 300;
+}
+
+.content-aboutme {
+	text-align: left;
+	padding: 0 40%;
+	font-weight: 300;
+}
+
+.picture-me {
+	align-content: center;
+	width: 40%;
+	margin: 1em 0;
+}
+
+.picture-align {
+	text-align: center;
+}
+
+.head-content-aboutme {
+	text-align: center;
+}
+
+.topic-content {
+	text-align: center;
+}
+
+.line-with-content {
+	width: 450px;
+	border: solid 0.02em #019788;
+	margin-top: -5px; 
+}
+
+.line-end-content {
+	width: 450px;
+	border: solid 0.1em #019788;
+	margin-top: -5px; 
+}
+
+.grid-container-skills {
+	width: 75%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 49% 49%;
+	grid-column-gap: 2%;
+
+}
+
+.grid-2-skill, .grid-1-skill {
+	width: 100%;
+}
+  </style>
+
 </html>
